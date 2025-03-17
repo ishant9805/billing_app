@@ -16,7 +16,7 @@ class BillingApp(QMainWindow):
             host=environ.get("HOST"),
             user=environ.get("USER"),
             port=environ.get("PORT"),
-            password=environ.get("PASSWORD"),
+            password=environ.get("DB_PASSWORD"),
             database="billing_db"
         )
         self.cursor = self.db.cursor()
